@@ -4,7 +4,14 @@ import Picture from "./Picture";
 
 function Herosection() {
   const themeContext = useContext(ThemeContext)
-    const { theme, toggleTheme } = themeContext;
+
+
+  if (!themeContext) {
+    throw new Error(
+      "ThemeContext is undefined, make sure you are using the ThemeProvider."
+    );
+  }
+    const { theme } = themeContext;
 
   return (
     <>

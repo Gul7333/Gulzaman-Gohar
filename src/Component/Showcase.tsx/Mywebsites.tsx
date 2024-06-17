@@ -10,7 +10,7 @@ function Mywebsites() {
     );
   }
 
-     const { theme, toggleTheme } = themeContext;
+     const { theme } = themeContext;
   
   return (
     <div id="showcase">
