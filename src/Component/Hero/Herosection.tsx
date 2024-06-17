@@ -34,7 +34,7 @@ function Herosection() {
     
     <span style={{ fontSize: "0.5em", display: "block" , marginTop: "70px", maxWidth: "400px", fontFamily: "Playwrite VN" }}> I have passion to create web and apps which can simplify and solve real life problems of users. </span>
           <span style={{ fontSize: "0.8em", display: "block" , marginTop: "70px", maxWidth: "400px"}}> <button> <a href="#showcase" style={{textDecoration: "none", color : theme === "light" ? "#fff" : "#000"}} >see how</a> </button> </span>
-          <span style={{ fontSize: "0.8em", display: "block" , marginTop: "10px", maxWidth: "400px"}}> <button> Also See my Github profile</button> </span>
+          <span style={{ fontSize: "0.8em", display: "block" , marginTop: "10px", maxWidth: "400px"}}> <button> <a href="https://github.com/Gul7333" style={{textDecoration: "none", color : theme === "light" ? "#fff" : "#000"}} >Also see my Github</a> </button> </span>
 
         </div>
         <Picture />
