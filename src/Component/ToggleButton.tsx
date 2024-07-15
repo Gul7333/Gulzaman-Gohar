@@ -1,5 +1,17 @@
+import { useContext } from "react";
+import { ThemeContext } from "../Context/ThemeContext";
 
-function ToggleButton({theme, toggleTheme}) {
+function ToggleButton() {
+  const themeContext = useContext(ThemeContext);
+  
+
+  if (!themeContext) {
+    throw new Error(
+      "ThemeContext is undefined, make sure you are using the ThemeProvider."
+    );
+  }
+
+  const { theme, toggleTheme, } = themeContext;
 
     // const [active, setActive] = useState(false)
   return (

@@ -1,19 +1,11 @@
-import { useContext } from "react";
-import { ThemeContext } from "../../Context/ThemeContext.tsx";
+
 import logo from "../../assets/github-mark/github-mark.png" 
 import darklogo from "../../assets/github-mark/github-mark-white.png"
 import ToggleButton from "../ToggleButton.tsx";
+import { getTheme } from "../../utils/getTheme.ts";
 function Header() {
-  const themeContext = useContext(ThemeContext);
 
-  if (!themeContext) {
-    throw new Error(
-      "ThemeContext is undefined, make sure you are using the ThemeProvider."
-    );
-  }
-
-  const { theme, toggleTheme } = themeContext;
-
+const {theme} = getTheme()
   return (
     <header
       className="App-header"
@@ -48,7 +40,7 @@ function Header() {
         </div>
 
         {/* <button onClick={toggleTheme} style={{ maxWidth: "px"}}> */}
-        <ToggleButton theme={theme} toggleTheme={toggleTheme}>
+        <ToggleButton>
         
         </ToggleButton>
       </div>
