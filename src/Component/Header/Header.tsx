@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { ThemeContext } from "../../Context/ThemeContext.tsx";
 import logo from "../../assets/github-mark/github-mark.png" 
 import darklogo from "../../assets/github-mark/github-mark-white.png"
+import ToggleButton from "../ToggleButton.tsx";
 function Header() {
   const themeContext = useContext(ThemeContext);
 
@@ -46,9 +47,10 @@ function Header() {
           </a>
         </div>
 
-        <button onClick={toggleTheme} style={{ maxWidth: "px"}}>
+        {/* <button onClick={toggleTheme} style={{ maxWidth: "px"}}> */}
+        <ToggleButton theme={theme} toggleTheme={toggleTheme}>
           {theme === "light" ? "Day" : "Night"}
-        </button>
+        </ToggleButton>
       </div>
     </header>
   );
