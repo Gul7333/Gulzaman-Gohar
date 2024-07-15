@@ -19,12 +19,12 @@ function Header() {
       className="App-header"
       style={{
         display: "flex",
-        padding: "0 8px",
+        padding: "3px 8px",
         justifyContent: "space-between",
         alignItems: "center",
-        borderBottom: "1px solid grey",
+        borderBottom: "1px solid #ddd",
         boxSizing: "border-box",
-    fontFamily: "Playwrite AU TAS",
+    // fontFamily: "Playwrite AU TAS",
 
     
         
@@ -35,7 +35,7 @@ function Header() {
       <div style={{ fontSize: "1.4em", lineHeight: 0,  }}>Gul Zaman</div>
 
       <div style={{ display: "flex", gap: "4px", alignItems: "center",justifyContent: "center" }}>
-        <div style={{ width: "30px" }}>
+        <div style={{ width: "27px", height: "27px" }}>
         
           <a href="https://github.com/Gul7333">
             <img
@@ -49,7 +49,7 @@ function Header() {
 
         {/* <button onClick={toggleTheme} style={{ maxWidth: "px"}}> */}
         <ToggleButton theme={theme} toggleTheme={toggleTheme}>
-          {theme === "light" ? "Day" : "Night"}
+        
         </ToggleButton>
       </div>
     </header>

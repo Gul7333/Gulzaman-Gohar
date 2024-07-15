@@ -9,7 +9,7 @@ function ToggleButton({theme, toggleTheme}) {
         borderWidth: "2px",
         padding: "0 3px",
         borderRadius: "20px",
-        borderColor: theme === "light" ? "#000" : "#fff",
+        borderColor: theme === "light" ? "#aaa" : "#ddd",
         borderStyle: "solid",
         display: "inline-block",
         width: "60px",
